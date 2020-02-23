@@ -1,0 +1,112 @@
+/* 
+ the css for page 
+ it was the single style css for the index page
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#app{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+#menu{
+    width: 60px;
+    transition: 0.5s all;
+    height: 100vh;
+    overflow: hidden;
+    background: rgb(42, 43, 42);
+    flex-shrink: 0;
+    position: relative;
+}
+#view{
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+}
+.menuItem{
+    width: 240px;
+    height: 60px;
+    display: flex;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.menuItem:hover{
+    background: rgb(34, 34, 34);
+}
+#title{
+    width: 100%;
+    height: 50px;
+}
+#TelescopicButton{
+    width: 30px;
+    position: absolute;
+    right: 15px;
+    top:10px;
+    cursor: pointer;
+}
+.menuIcon{
+    width: 60px;
+    height: 60px;
+}
+.menuIcon img{
+    width: 25px;
+    margin-top: 17.5px;
+    margin-left: 15px;
+}
+.menuTitle{
+    transition: 0.5s all;
+    width: 180px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 14px;
+    color: rgb(211, 208, 208);
+}
+.menuItem:hover .menuTitle{
+    color: white;
+}
+#view1{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#ceiusmCanvas{
+    width: 100%;
+    height: 100%;
+}
+#ceiusmCanvas canvas{
+    width: 100%!important;
+    height: 100vh!important;
+}
+.cesium-viewer-selectionIndicatorContainer{
+    display: none;
+}
+.cesium-viewer-infoBoxContainer{
+    display: none;
+}
+.cesium-viewer{
+    width: 100%;
+    height: 100%;
+}
+.cesium-viewer-cesiumWidgetContainer{
+    width: 100%;
+    height: 100%;
+}
+#cesiumMenu{
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    left:0;
+    background: red;
+}

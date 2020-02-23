@@ -3,9 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>圣马</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./assets/Cesium/Cesium.js"></script>
+    <link src="./assets/Cesium/Widgets/widgets.css">
 </head>
 <body>
-    hello git i am you first app
+    <div id="app">
+        <!-- left menu -->
+        <div id="menu">
+            <div id="title">
+                <img src="./assets/img/展开 (1).png" title="收缩" id="TelescopicButton">
+            </div>
+            <div class="menuItem">
+                <div class="menuIcon" title="Dashboard">
+                    <img src="./assets/img/100仪表盘.png" alt="">
+                </div>
+                <div class="menuTitle">Dashboard</div>
+            </div>
+            <div class="menuItem">
+                <div class="menuIcon" title="重大危险源预警检测系统">
+                    <img src="./assets/img/危险.png" alt="">
+                </div>
+                <div class="menuTitle">重大危险源预警检测系统</div>
+            </div>
+            <div class="menuItem">
+                <div class="menuIcon" title="安全风险分区分级系统">
+                    <img src="./assets/img/饼图.png" alt="">
+                </div>
+                <div class="menuTitle">安全风险分区分级系统</div>
+            </div>
+            <div class="menuItem">
+                <div class="menuIcon" title="人员位置管理系统">
+                    <img src="./assets/img/人员.png" alt="">
+                </div>
+                <div class="menuTitle">人员位置管理系统</div>
+            </div>
+            <div class="menuItem">
+                <div class="menuIcon" title="全流程安全生产管理系统">
+                    <img src="./assets/img/收缩.png" alt="">
+                </div>
+                <div class="menuTitle">全流程安全生产管理系统</div>
+            </div>
+            <div class="menuItem">
+                <div class="menuIcon" title="可燃有毒气体检测报警系统">
+                    <img src="./assets/img/可燃气体.png" alt="">
+                </div>
+                <div class="menuTitle">可燃有毒气体检测报警系统</div>
+            </div>
+            <div class="menuItem" style="background: black;">
+                <div class="menuIcon" title="五位一体平台">
+                    <img src="./assets/img/大屏轮巡.png" alt="">
+                </div>
+                <div class="menuTitle">五位一体平台</div>
+            </div>
+            <div class="menuItem">
+                <div class="menuIcon" title="名牛工业云">
+                    <img src="./assets/img/企业.png" alt="">
+                </div>
+                <div class="menuTitle">名牛工业云</div>
+            </div>
+        </div>
+        <!-- right view -->
+        <div id="view">
+            <!-- test View one -->
+            <div id="view1">
+                <!-- ceiusm canvas -->
+                <div id="ceiusmCanvas"></div>
+                <!-- cesium menu -->
+                <div id="cesiumMenu"></div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="./js/main.js"></script>
+<script src="./js/ui.js"></script>
+<script src="./js/log.js"></script>
 </html>
